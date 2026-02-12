@@ -1,9 +1,11 @@
 ---
 date: '2020-09-21'
-title: 'Member'
-company: 'DSV - SVVV'
+title: ''
+company: 'Week 3'
 location: remote
-range: 'Sep 2020 - Present'
+range: '12/02/26 tot 15/02/26 '
 url: 'https://dsc.community.dev/shri-vaishnav-vidyapeeth-vishwavidyalaya/'
 tags: ['Community', 'Leadership', 'Tech']
 ---
+
+- blablaaa

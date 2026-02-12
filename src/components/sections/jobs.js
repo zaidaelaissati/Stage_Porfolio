@@ -266,7 +266,7 @@ const Jobs = ({ data }) => {
 
   return (
     <StyledContainer id="jobs" ref={revealContainer}>
-      <Heading>Where I&apos;ve Worked</Heading>
+      <Heading>Weekoverzicht</Heading>
 
       {allTags.length > 0 && (
         <StyledTagsContainer>
@@ -324,7 +324,6 @@ const Jobs = ({ data }) => {
                 <StyledJobTitle>
                   <span>{title}</span>
                   <StyledCompany>
-                    <span>&nbsp;@&nbsp;</span>
                     <a href={url} target="_blank" rel="nofollow noopener noreferrer">
                       {company}
                     </a>

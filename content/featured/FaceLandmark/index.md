@@ -1,12 +1,12 @@
 ---
 date: '4'
-title: 'AI Face Landmark Detection'
-cover: 'face-landmark.png'
-github: 'https://github.com/yashitanamdeo/face-landmark-detection'
-external: 'https://yashitanamdeo.github.io/face-landmark-detection/'
+title: '📍Het Bedrijf – DeskDrive'
+cover: 'bedrijf_foto.jpg'
+github: ''
+external: ''
 tech:
-  - TensorFlow.JS
-  - React
+  - locatie
+  - DeskDrive, Langestraat 97/3, 2240 Zandhoven
 showInProjects: true
 ---
 

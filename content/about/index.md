@@ -18,7 +18,7 @@ Ik ben leergierig, gedreven en werk graag gestructureerd aan projecten. Nieuwe t
 
 📍 Over mijn stage bij DeskDrive
 
-Momenteel loop ik stage bij DeskDrive, een bedrijf dat krachtige en flexibele CRM‑ en ERP‑software levert. Deze software helpt organisaties hun bedrijfsprocessen te centraliseren en te optimaliseren — van klantbeheer en offertes tot planning, facturatie en voorraadbeheer — en past zich aan de manier van werken van elke klant aan in plaats van andersom.
+Momenteel loop ik stage bij DeskDrive, een bedrijf dat krachtige en flexibele CRM en ERP‑software levert. Deze software helpt organisaties hun bedrijfsprocessen te centraliseren en te optimaliseren van klantbeheer en offertes tot planning, facturatie en voorraadbeheer en past zich aan de manier van werken van elke klant aan in plaats van andersom.
 
 Bij DeskDrive werk ik mee aan projecten rond:
 

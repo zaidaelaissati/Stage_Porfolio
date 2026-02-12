@@ -13,6 +13,4 @@ tech:
 showInProjects: true
 ---
 
-Face Mask Detection system to automatically detect the face masks on people in real time through webcams. Own custom dataset was built using Bing Search API and Kaggle. Achieved 95% accuracy in all mask colors; managed to improve efficiency in all lighting conditions
-
-Inspired by Adrian Rosebrock's [PyImageSearch Blog](https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/).
+bedrijf is zo blabla....

@@ -1,26 +1,31 @@
 ---
 date: '2021-06-11'
-title: 'Campus Ambassador Intern'
-company: 'IMUN'
+title: ''
+company: 'Week 1'
 location: remote
-range: 'June 2021 - July 2021'
-url: 'https://www.internationalmun.org/'
+range: '2/02/26 tot 8/02/26'
+url: ''
 tags: ['Internship', 'Community', 'Learning']
 ---
 
-- Grown knowledge in a peer-to-peer learning environment.
-- Build solutions for local businesses and the community.
-- Attained several technical workshops.
+### Stage-start & kennismaking
+
 - Stage-start & kennismaking
 - Rondleiding en kennismaking met het team
 - Mail en accounts opgezet
 - Software/platform verkend
 - Opleidingstraining modules 1 t/m 3 gevolgd, na elke module mondelinge test
+
+### Database-project – eerste stappen
+
 - Database-project – eerste stappen
 - Opzoekwerk: Point-in-time recovery, master/slave transacties in PostgreSQL, Docker en Linux
 - Testdatabase aangemaakt, records toegevoegd
 - Backups gemaakt en specifieke backups teruggehaald
 - Module 3 en 4 van opleiding gestart
+
+### Database-project – eerste stappen
+
 - Milestones
 - Handmatig backups testen
-- Plan van aanpak opgesteld: einddoel project = productie
+- Plan van aanpak opgesteld -> proof of concept -> productie
