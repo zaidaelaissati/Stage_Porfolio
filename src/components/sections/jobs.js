@@ -154,13 +154,84 @@ const StyledJobDetails = styled.h5`
   }
 `;
 
+const StyledTagsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+`;
+
+const StyledTag = styled.button`
+  padding: 8px 16px;
+  border: 1px solid ${props => (props.isActive ? colors.green : colors.lightestNavy)};
+  background-color: ${props => (props.isActive ? colors.green : 'transparent')};
+  color: ${props => (props.isActive ? colors.darkNavy : colors.slate)};
+  border-radius: 4px;
+  font-family: ${fonts.SFMono};
+  font-size: ${fontSizes.xs};
+  cursor: pointer;
+  transition: ${theme.transition};
+
+  &:hover {
+    border-color: ${colors.green};
+    color: ${colors.green};
+  }
+`;
+
+const StyledJobTags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+`;
+
+const StyledJobTag = styled.span`
+  font-family: ${fonts.SFMono};
+  font-size: ${fontSizes.xs};
+  color: ${colors.green};
+  background-color: rgba(100, 200, 100, 0.1);
+  padding: 4px 8px;
+  border-radius: 3px;
+`;
+
 const Jobs = ({ data }) => {
   const [activeTabId, setActiveTabId] = useState(0);
+  const [selectedTags, setSelectedTags] = useState([]);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
 
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
+
+  // Extract all unique tags from jobs
+  const allTags = data
+    .reduce((tags, job) => {
+      const jobTags = job.node.frontmatter.tags || [];
+      jobTags.forEach(tag => {
+        if (!tags.includes(tag)) {
+          tags.push(tag);
+        }
+      });
+      return tags;
+    }, [])
+    .sort();
+
+  // Filter jobs based on selected tags
+  const filteredData = data.filter(job => {
+    if (selectedTags.length === 0) {
+      return true;
+    }
+    const jobTags = job.node.frontmatter.tags || [];
+    return selectedTags.some(tag => jobTags.includes(tag));
+  });
+
+  const toggleTag = tag => {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(selectedTags.filter(t => t !== tag));
+    } else {
+      setSelectedTags([...selectedTags, tag]);
+    }
+  };
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -196,10 +267,27 @@ const Jobs = ({ data }) => {
   return (
     <StyledContainer id="jobs" ref={revealContainer}>
       <Heading>Where I&apos;ve Worked</Heading>
+
+      {allTags.length > 0 && (
+        <StyledTagsContainer>
+          <StyledTag isActive={selectedTags.length === 0} onClick={() => setSelectedTags([])}>
+            Alle jobs
+          </StyledTag>
+          {allTags.map(tag => (
+            <StyledTag
+              key={tag}
+              isActive={selectedTags.includes(tag)}
+              onClick={() => toggleTag(tag)}>
+              {tag}
+            </StyledTag>
+          ))}
+        </StyledTagsContainer>
+      )}
+
       <StyledTabs>
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyPressed(e)}>
-          {data &&
-            data.map(({ node }, i) => {
+          {filteredData &&
+            filteredData.map(({ node }, i) => {
               const { company } = node.frontmatter;
               return (
                 <li key={i}>
@@ -220,10 +308,10 @@ const Jobs = ({ data }) => {
           <StyledHighlight activeTabId={activeTabId} />
         </StyledTabList>
 
-        {data &&
-          data.map(({ node }, i) => {
+        {filteredData &&
+          filteredData.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { title, url, company, range } = frontmatter;
+            const { title, url, company, range, tags } = frontmatter;
             return (
               <StyledTabContent
                 key={i}
@@ -246,6 +334,13 @@ const Jobs = ({ data }) => {
                   <span>{range}</span>
                 </StyledJobDetails>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
+                {tags && tags.length > 0 && (
+                  <StyledJobTags>
+                    {tags.map(tag => (
+                      <StyledJobTag key={tag}>{tag}</StyledJobTag>
+                    ))}
+                  </StyledJobTags>
+                )}
               </StyledTabContent>
             );
           })}

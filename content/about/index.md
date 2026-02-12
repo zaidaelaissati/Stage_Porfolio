@@ -1,22 +1,27 @@
 ---
 title: 'About Me'
-avatar: 'me.jpg'
+avatar: 'eigen_foto.png'
 skills:
-  - Coding
-  - Reading
-  - Painting
-  - Crafting
-  - Problem Solving
-  - Team Management
-  - Mentoring
+  - Frond-end & Back-end development
+  - Teamcoördinatie
+  - Doorzettingsvermogen
+  - leergierig & kennisverrijking
+  - Probleem oplossend
+  - Aanpassingsvermogen
 ---
 
-Hello! I'm Yashita Namdeo, from Indore, also known as Mini Mumbai and the Cleanest City of India.
+👋 Hallo! Ik ben Zaida
 
-I am a creative, time punctual, dedicated, goal-oriented individual with decent moral Values and Ethicates along with a high-energy level, honed communication skills, strong organizational skills, and meticulous attention to detail.
+Een enthousiaste programmeerstudent en laatstejaarsstudent [Graduaat Programmeren](https://www.ap.be/en/graduaat/programming) aan [AP Hogeschool](https://www.ap.be/) met een grote interesse in technologie en alles wat met digitale oplossingen te maken heeft.
 
-I am pursuing my Bachelors from [SVVV, Indore](https://www.svvv.edu.in/) in Computer Science and Engineering (2018-2022) my current GPA is [3.7]() out of 4.
+Ik ben leergierig, gedreven en werk graag gestructureerd aan projecten. Nieuwe technologieën ontdekken geeft mij energie, en ik hou ervan om ideeën om te zetten in werkende applicaties. Of het nu gaat om het bouwen van een gebruiksvriendelijke interface of het uitwerken van de logica achter de schermen, ik duik er met volle focus in.
 
-I am a member of [Developer Student Club - SVVV](https://dsc.community.dev/shri-vaishnav-vidyapeeth-vishwavidyalaya/) and have also been awarded 75% Merit Scholarship(Top 10%) by my college.
+📍 Over mijn stage bij DeskDrive
 
-Here are a few of the other activities that I love to do!
+Momenteel loop ik stage bij DeskDrive, een bedrijf dat krachtige en flexibele CRM‑ en ERP‑software levert. Deze software helpt organisaties hun bedrijfsprocessen te centraliseren en te optimaliseren — van klantbeheer en offertes tot planning, facturatie en voorraadbeheer — en past zich aan de manier van werken van elke klant aan in plaats van andersom.
+
+Bij DeskDrive werk ik mee aan projecten rond:
+
+🔄 Herstellen van database‑backups om te zorgen dat gegevens veilig, compleet en beschikbaar blijven.
+
+🛠️ Aanpassen van software op maat van klanten, zodat systemen precies aansluiten op hun bedrijfsprocessen.

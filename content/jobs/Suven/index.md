@@ -5,6 +5,7 @@ company: 'Suven C&T'
 location: remote
 range: 'May 2021 - June 2021'
 url: 'https://internship.suvenconsultants.com/'
+tags: ['Internship', 'Web Development', 'Frontend']
 ---
 
 - Directed and shaped a 365 Entertainment and Blogging Frontend Website, using HTML5 and CSS3

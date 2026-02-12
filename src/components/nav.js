@@ -6,7 +6,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { throttle } from '@utils';
 import { navLinks, navHeight } from '@config';
 import { Menu } from '@components';
-import { IconLogo } from '@components/icons';
+import logo from '@images/logo.png';
 import styled from 'styled-components';
 import { theme, mixins, media } from '@styles';
 const { colors, fontSizes, fonts, loaderDelay } = theme;
@@ -50,12 +50,11 @@ const StyledLogo = styled.div`
     height: 42px;
     &:hover,
     &:focus {
-      svg {
-        fill: ${colors.transGreen};
-      }
+      opacity: 0.8;
     }
-    svg {
-      fill: none;
+    img {
+      width: 100%;
+      height: 100%;
       transition: ${theme.transition};
       user-select: none;
     }
@@ -248,11 +247,11 @@ class Nav extends Component {
                 <StyledLogo tabindex="-1">
                   {isHome ? (
                     <a href="/" aria-label="home">
-                      <IconLogo />
+                      <img src={logo} alt="Zaida El Aissati" />
                     </a>
                   ) : (
                     <Link to="/" aria-label="home">
-                      <IconLogo />
+                      <img src={logo} alt="Zaida El Aissati" />
                     </Link>
                   )}
                 </StyledLogo>

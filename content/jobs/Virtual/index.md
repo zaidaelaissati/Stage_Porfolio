@@ -5,6 +5,7 @@ company: 'Forage'
 location: remote
 range: 'July 2020 - May 2021'
 url: 'https://www.theforage.com/'
+tags: ['Virtual', 'Tech', 'Learning']
 ---
 
 - Microsoft - Engineering Virtual Experience [CERTIFICATE](https://insidesherpa.s3.amazonaws.com/completion-certificates/Microsoft/ms2CK9b2SCWGXwPMS_Microsoft_nXPiDeZbPmvKvvjHA_completion_certificate.pdf)
